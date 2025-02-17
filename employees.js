@@ -1,18 +1,18 @@
 const employees = [ {
-  name: 'Bob Joe',
-  id: 1
+  id: 1,
+  name: 'Bob Joe'
 },
 {
-  name: 'Joe Bob',
-  id: 2
+  id: 2,
+  name: 'Joe Bob'
 },
 {
-  name: 'Test User',
-  id: 3
+  id: 3,
+  name: 'Test User'
 },
 {
-  name: 'New user',
-  id: 4
+  id: 4,
+  name: 'New user'
 }
 ]
 
