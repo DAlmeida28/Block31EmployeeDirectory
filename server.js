@@ -30,6 +30,7 @@ app.get('/employees/:employeeId', (req, res) => {
     res.send(foundEmployee);
   })
 
-app.listen(3000, () => {
-  console.log('listening on PORT 3000');
+  const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`listening on PORT ${PORT}`);
 })
