@@ -5,17 +5,19 @@ function App() {
 
   useEffect(() => {
     const listEmployees = async () => {
-      const getEmployees = await fetch('https://employeedirectory-5zja.onrender.com/employees')
+      const getEmployees = await fetch('/employees');
       const response = await getEmployees.json();
       setAllEmployees(response);
     }
     listEmployees();
-  })
+  }, [])
 
   return (
     <>
+    {console.log(allEmployees)}
+    <h1>HELLO WORLD</h1>
     {allEmployees.map((employee) => {
-      <ul>{employee.name}</ul>
+      return(<ul>{employee.name}</ul>)
     })}
      
     </>
